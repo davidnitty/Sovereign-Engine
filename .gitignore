@@ -1,0 +1,7 @@
+bin/
+dist/
+*.db
+*.enc
+master.key
+.env
+.env.enc

@@ -1,0 +1,15 @@
+apiVersion: sovereign.engine/v1alpha1
+kind: Composition
+metadata:
+  name: monitoring-stack
+spec:
+  type: monitoring
+  description: Prometheus and Grafana monitoring stack.
+  parameters:
+    prometheus_retention: 15d
+    grafana_admin_user: admin
+    size: small
+    region: us-east-1
+  labels:
+    cleanup: "true"
+    category: observability

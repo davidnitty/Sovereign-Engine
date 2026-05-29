@@ -1,0 +1,15 @@
+apiVersion: sovereign.engine/v1alpha1
+kind: Composition
+metadata:
+  name: database
+spec:
+  type: database
+  description: Managed relational database service.
+  parameters:
+    engine: postgres
+    version: "16"
+    size: small
+    region: us-east-1
+  labels:
+    cleanup: "true"
+    category: data
